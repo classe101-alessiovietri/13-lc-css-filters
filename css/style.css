@@ -17,4 +17,58 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    background-color: lightcoral;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    background-color: aquamarine;
+}
+
+.col-1-3 {
+    width: calc((100% / 3) - 20px);
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.sepia {
+    filter: sepia(0.7);
+}
+
+.grayscale {
+    filter: grayscale(1);
+    transition: filter 3s;
+}
+
+.grayscale:hover {
+    filter: grayscale(0);
+}
+
+.brightness {
+    filter: brightness(0.7);
+}
+
+.invert {
+    filter: invert(0.7);
+}
+
+.contrast {
+    filter: contrast(0.7);
+}
+
+.hue-rotate {
+    filter: hue-rotate(60deg);
+}
+
+.opacity {
+    filter: opacity(0.2);
+}
+
+.blur {
+    filter: blur(50px);
 }
